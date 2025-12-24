@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "DressIQ Assistant & Try-On",
+  "version": "1.0",
+  "description": "Adds AI Chat Support and Virtual Try-On features to e-commerce sites.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["extension.css"],
+      "js": ["content.js"]
+    }
+  ]
+}

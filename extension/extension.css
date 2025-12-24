@@ -1,0 +1,425 @@
+/* Chat Widget Styles */
+.chat-widget-fab {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    cursor: pointer;
+    z-index: 99999;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.chat-widget-fab:hover {
+    transform: scale(1.1);
+}
+
+.chat-widget-fab svg {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
+.chat-window {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 350px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 99999;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.chat-window.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.chat-header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat-title {
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.chat-status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    display: block;
+}
+
+.chat-close-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.chat-close-btn:hover { opacity: 1; }
+
+.chat-body {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.chat-message {
+    max-width: 80%;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    position: relative;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.message-bot {
+    background-color: #fff;
+    color: #333;
+    align-self: flex-start;
+    border-bottom-left-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.message-user {
+    background-color: #000;
+    color: #fff;
+    align-self: flex-end;
+    border-bottom-right-radius: 2px;
+}
+
+.message-time {
+    font-size: 10px;
+    opacity: 0.7;
+    margin-top: 4px;
+    display: block;
+    text-align: right;
+}
+
+.chat-input-area {
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input {
+    flex: 1;
+    border: 1px solid #eee;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.chat-input:focus {
+    border-color: #000;
+}
+
+.chat-send-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.chat-send-btn:hover {
+    transform: scale(1.05);
+}
+
+/* VTON (Virtual Try On) Styles */
+.vton-trigger-fab {
+    position: fixed;
+    bottom: 100px; /* Above chat */
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    cursor: pointer;
+    z-index: 99999;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.vton-trigger-fab:hover {
+    transform: scale(1.1);
+    background-color: #000;
+    color: #fff;
+}
+
+/* Modal Styles */
+.vton-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    backdrop-filter: blur(5px);
+    font-family: 'Inter', sans-serif;
+}
+
+.vton-modal-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+.try-on-modal {
+    background: white;
+    width: 90%;
+    max-width: 480px;
+    border-radius: 16px;
+    padding: 40px;
+    position: relative;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+.vton-modal-overlay.active .try-on-modal {
+    transform: translateY(0);
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 28px;
+    color: #666;
+    line-height: 1;
+}
+
+.modal-header-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #000;
+}
+
+.modal-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.try-on-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.try-on-option-btn {
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 25px 15px;
+    background: #fcfcfc;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.try-on-option-btn:hover {
+    border-color: #000;
+    background: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.option-icon {
+    font-size: 32px;
+}
+
+.option-text {
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+}
+
+.privacy-note {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 20px;
+}
+
+/* VTON Process Styles */
+.preview-container {
+    width: 100%;
+    height: 300px;
+    background: #f5f5f5;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.primary-btn {
+    flex: 1;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+.primary-btn:hover { opacity: 0.9; }
+
+.secondary-btn {
+    flex: 1;
+    background: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.secondary-btn:hover { border-color: #000; }
+
+/* Loader */
+.ai-loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #000;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.process-text {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.process-subtext {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Result */
+.result-wrapper {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background: #eee;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.result-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.result-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    opacity: 0.95;
+    mix-blend-mode: multiply;
+}

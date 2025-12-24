@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Premium Kadın Elbise",
+    "price": 899.99,
+    "category": "elbise",
+    "color": "Bordo",
+    "fabric": "Viskon",
+    "image": "dress1.jpg",
+    "desc": "Şık ve zarif tasarımıyla öne çıkan premium kadın elbise. Özel günleriniz için ideal bir seçim. Yüksek kaliteli viskon kumaştan üretilmiştir."
+  },
+  {
+    "id": 2,
+    "name": "Klasik Erkek Gömlek",
+    "price": 449.99,
+    "category": "gomlek",
+    "color": "Beyaz",
+    "fabric": "Pamuk",
+    "image": "shirt1.jpg",
+    "desc": "İş hayatınızda ve özel günlerinizde rahatlıkla kullanabileceğiniz klasik erkek gömlek. %100 pamuklu kumaş yapısı ile tüm gün konfor sağlar."
+  },
+  {
+    "id": 3,
+    "name": "Slim Fit Pantolon",
+    "price": 599.99,
+    "category": "pantolon",
+    "color": "Lacivert",
+    "fabric": "Polyester Karışım",
+    "image": "pants1.jpg",
+    "desc": "Modern kesimi ve şık görünümüyle dikkat çeken slim fit pantolon. Esnek kumaş yapısı sayesinde hareket özgürlüğü sağlar."
+  },
+  {
+    "id": 4,
+    "name": "Yaz Elbisesi",
+    "price": 699.99,
+    "category": "elbise",
+    "color": "Çiçek Desenli",
+    "fabric": "Şifon",
+    "image": "dress2.jpg",
+    "desc": "Hafif ve ferah yapısıyla yaz aylarının vazgeçilmezi. Renkli çiçek desenleri ile enerjik bir görünüm sunar."
+  },
+  {
+    "id": 5,
+    "name": "Denim Gömlek",
+    "price": 499.99,
+    "category": "gomlek",
+    "color": "Mavi",
+    "fabric": "Denim",
+    "image": "shirt2.jpg",
+    "desc": "Casual tarzın olmazsa olmazı denim gömlek. Dayanıklı yapısı ve zamansız tasarımı ile gardırobunuzun vazgeçilmezi olacak."
+  },
+  {
+    "id": 6,
+    "name": "Chino Pantolon",
+    "price": 549.99,
+    "category": "pantolon",
+    "color": "Bej",
+    "fabric": "Pamuk Twill",
+    "image": "pants2.jpg",
+    "desc": "Hem rahat hem de şık bir görünüm için chino pantolon. Günlük kullanıma uygun, dayanıklı kumaş yapısı."
+  },
+  {
+    "id": 7,
+    "name": "Kokteyl Elbisesi",
+    "price": 1299.99,
+    "category": "elbise",
+    "color": "Siyah",
+    "fabric": "Saten",
+    "image": "dress3.jpg",
+    "desc": "Özel davetler için tasarlanmış zarif kokteyl elbisesi. Parlak saten kumaşı ile göz alıcı bir görünüm sunar."
+  },
+  {
+    "id": 8,
+    "name": "Oxford Gömlek",
+    "price": 529.99,
+    "category": "gomlek",
+    "color": "Açık Mavi",
+    "fabric": "Oxford Pamuk",
+    "image": "shirt3.jpg",
+    "desc": "Klasik Oxford dokuma ile üretilmiş kaliteli gömlek. İş ve günlük kullanım için mükemmel bir seçim."
+  },
+  {
+    "id": 9,
+    "name": "Kargo Pantolon",
+    "price": 649.99,
+    "category": "pantolon",
+    "color": "Haki",
+    "fabric": "Ripstop",
+    "image": "pants3.jpg",
+    "desc": "Fonksiyonel cepler ve dayanıklı yapısıyla kargo pantolon. Aktif yaşam tarzı için ideal bir seçim."
+  },
+  {
+    "id": 10,
+    "name": "Maxi Elbise",
+    "price": 849.99,
+    "category": "elbise",
+    "color": "Yeşil",
+    "fabric": "Jersey",
+    "image": "dress4.jpg",
+    "desc": "Uzun ve akışkan kesimi ile zarif bir görünüm sunan maxi elbise. Esnek jersey kumaş ile tüm gün konfor."
+  },
+  {
+    "id": 11,
+    "name": "Keten Gömlek",
+    "price": 579.99,
+    "category": "gomlek",
+    "color": "Krem",
+    "fabric": "Keten",
+    "image": "shirt4.jpg",
+    "desc": "Doğal keten kumaştan üretilmiş nefes alan gömlek. Yaz aylarında serin kalmak için ideal."
+  },
+  {
+    "id": 12,
+    "name": "Jogger Pantolon",
+    "price": 479.99,
+    "category": "pantolon",
+    "color": "Gri",
+    "fabric": "French Terry",
+    "image": "pants4.jpg",
+    "desc": "Rahat kesimi ve modern tasarımıyla jogger pantolon. Spor ve günlük kullanım için mükemmel."
+  }
+]

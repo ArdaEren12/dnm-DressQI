@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DressIQ - Premium moda ürünleri ve en son trendler. Kaliteli elbise, gömlek ve pantolon koleksiyonları."
+    />
+    <title>DressIQ - Premium Moda Koleksiyonu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>DressIQ</h1>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Filtre Butonları -->
+      <div id="filters">
+        <button class="filter-btn active" data-category="all">Tümü</button>
+        <button class="filter-btn" data-category="elbise">Elbise</button>
+        <button class="filter-btn" data-category="gomlek">Gömlek</button>
+        <button class="filter-btn" data-category="pantolon">Pantolon</button>
+      </div>
+
+      <!-- Ürün Listesi -->
+      <div id="product-list">
+        <!-- Ürünler JavaScript ile buraya yüklenecek -->
+        <div class="loading">Ürünler yükleniyor</div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

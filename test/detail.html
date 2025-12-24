@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ürün detayları ve özellikleri - DressIQ Premium Moda">
+    <title>Ürün Detayı - DressIQ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>DressIQ</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Geri Dön Butonu -->
+        <a href="index.html" class="back-btn">← Ana Sayfaya Dön</a>
+
+        <!-- Ürün Detay -->
+        <div id="product-detail">
+            <!-- Ürün detayları JavaScript ile buraya yüklenecek -->
+            <div class="loading">Ürün detayları yükleniyor</div>
+        </div>
+
+        <!-- Benzer Ürünler -->
+        <div id="similar-products">
+            <h2 class="section-title">Benzer Ürünler</h2>
+            <div id="similar-list" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem;">
+                <!-- Benzer ürünler JavaScript ile buraya yüklenecek -->
+            </div>
+        </div>
+    </main>
+
+    <script src="detail.js"></script>
+</body>
+</html>
