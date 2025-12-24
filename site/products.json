@@ -1,0 +1,288 @@
+[
+  {
+    "id": 1,
+    "name": "Modern Crop Blazer Ceket",
+    "category": "Kadın",
+    "price": 899,
+    "oldPrice": 1299,
+    "discount": "31%",
+    "shortDescription": "Minimalist ve şık tasarım. Ofis ve günlük kullanım için ideal.",
+    "description": "Minimalist tasarımın şıklıkla buluştuğu nokta. %100 Pamuklu kumaş yapısı ile hem rahat hem de şık bir kullanım sunar. Ofis şıklığından günlük kullanıma her anınıza eşlik eder.",
+    "images": [
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=200&auto=format&fit=crop"
+    ],
+    "colors": [
+      { "name": "Siyah", "hex": "#2c2c2c" },
+      { "name": "Kahverengi", "hex": "#8b7355" }
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "rating": 5,
+    "reviewCount": 124,
+    "features": ["Ücretsiz Kargo", "30 Gün İade", "Güvenli Ödeme"],
+    "fabric": "%100 Pamuk",
+    "isNewSeason": true
+  },
+  {
+    "id": 2,
+    "name": "Akışkan Saten Elbise",
+    "category": "Kadın",
+    "price": 1499,
+    "oldPrice": 1899,
+    "discount": "21%",
+    "shortDescription": "Zarif ve modern kesim. Özel davetler için mükemmel seçim.",
+    "description": "Akışkan saten kumaşı ile vücudunuzu sarar ve zarif bir silüet oluşturur. Özel günlerde ve davetlerde şıklığınızı tamamlar.",
+    "images": [
+      "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=200&auto=format&fit=crop"
+    ],
+    "colors": [
+      { "name": "Kırmızı", "hex": "#a40000" },
+      { "name": "Siyah", "hex": "#000000" }
+    ],
+    "sizes": ["S", "M", "L"],
+    "rating": 4.8,
+    "reviewCount": 85,
+    "features": ["Hızlı Teslimat", "Kuru Temizleme"],
+    "fabric": "%95 Polyester, %5 Elastan",
+    "isNewSeason": false
+  },
+  {
+    "id": 3,
+    "name": "Oversize Denim Ceket",
+    "category": "Kadın",
+    "price": 1200,
+    "oldPrice": null,
+    "discount": null,
+    "shortDescription": "Sokak modasının vazgeçilmezi. Rahat ve cool.",
+    "description": "Yüksek kaliteli denim kumaştan üretilmiş oversize kalıp ceket. Her mevsim kullanabileceğiniz zamansız bir parça.",
+    "images": [
+      "https://images.unsplash.com/photo-1544642899-f0d6e5f6ed6f?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1544642899-f0d6e5f6ed6f?q=80&w=200&auto=format&fit=crop"
+    ],
+    "colors": [
+      { "name": "Mavi", "hex": "#1e3f5a" },
+      { "name": "Siyah", "hex": "#1a1a1a" }
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "rating": 4.5,
+    "reviewCount": 42,
+    "features": ["Dayanıklı Kumaş", "Yerli Üretim"],
+    "fabric": "%100 Denim",
+    "isNewSeason": true
+  },
+  {
+    "id": 4,
+    "name": "Yüksek Bel Palazzo Pantolon",
+    "category": "Kadın",
+    "price": 650,
+    "oldPrice": 799,
+    "discount": "18%",
+    "shortDescription": "Konforlu ve şık. Uzun bacak boyu etkisi.",
+    "description": "Yüksek bel kesimi ve geniş paçaları ile modern bir görünüm sunar. Topuklu ayakkabılarla veya spor ayakkabılarla kombinlemesi kolaydır.",
+    "images": [
+      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=200&auto=format&fit=crop"
+    ],
+    "colors": [
+      { "name": "Bej", "hex": "#f5f5dc" },
+      { "name": "Siyah", "hex": "#000000" }
+    ],
+    "sizes": ["34", "36", "38", "40", "42"],
+    "rating": 4.2,
+    "reviewCount": 30,
+    "features": ["Ütü İstemez", "Rahat Kalıp"],
+    "fabric": "%60 Viskoz, %40 Polyester",
+    "isNewSeason": false
+  },
+  {
+    "id": 5,
+    "name": "Klasik Beyaz Gömlek",
+    "category": "Erkek",
+    "price": 550,
+    "oldPrice": null,
+    "discount": null,
+    "shortDescription": "Her gardıropta olması gereken klasik parça.",
+    "description": "Slim fit kesimi ve kaliteli pamuk kumaşı ile iş hayatında ve özel günlerde şıklığınızı tamamlar.",
+    "images": [
+      "https://images.unsplash.com/photo-1620012253295-c15cc3ef1887?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1620012253295-c15cc3ef1887?q=80&w=200&auto=format&fit=crop"
+    ],
+    "colors": [
+      { "name": "Beyaz", "hex": "#ffffff" },
+      { "name": "Mavi", "hex": "#add8e6" }
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "rating": 4.6,
+    "reviewCount": 210,
+    "features": ["Kolay Ütü", "Nefes Alan Kumaş"],
+    "fabric": "%100 Pamuk",
+    "isNewSeason": false
+  },
+  {
+    "id": 6,
+    "name": "Yün Karışımlı Palto",
+    "category": "Erkek",
+    "price": 2499,
+    "oldPrice": 2999,
+    "discount": "16%",
+    "shortDescription": "Soğuk havalarda sıcak tutan şık tasarım.",
+    "description": "Kaliteli yün karışımı kumaşı ile kış aylarının vazgeçilmezi. Klasik yaka detayı ve düğmeli kapama.",
+    "images": [
+      "https://images.unsplash.com/photo-1516257984-b1b4d8c9230c?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1516257984-b1b4d8c9230c?q=80&w=200&auto=format&fit=crop"
+    ],
+    "colors": [
+      { "name": "Lacivert", "hex": "#000080" },
+      { "name": "Siyah", "hex": "#000000" }
+    ],
+    "sizes": ["48", "50", "52", "54"],
+    "rating": 4.9,
+    "reviewCount": 55,
+    "features": ["Sıcak Tutar", "Premium Kumaş"],
+    "fabric": "%60 Yün, %40 Polyester",
+    "isNewSeason": true
+  },
+  {
+    "id": 7,
+    "name": "Slim Fit Chino Pantolon",
+    "category": "Erkek",
+    "price": 799,
+    "oldPrice": 999,
+    "discount": "20%",
+    "shortDescription": "Günlük ve ofis şıklığı için ideal.",
+    "description": "Esnek pamuklu kumaşı ile gün boyu konfor sağlar. Farklı renk seçenekleri ile her kombine uyum sağlar.",
+    "images": [
+      "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?q=80&w=200&auto=format&fit=crop"
+    ],
+    "colors": [
+      { "name": "Bej", "hex": "#f5f5dc" },
+      { "name": "Haki", "hex": "#bdb76b" }
+    ],
+    "sizes": ["30", "32", "34", "36"],
+    "rating": 4.3,
+    "reviewCount": 78,
+    "features": ["Esnek Yapı", "Rahat Bel"],
+    "fabric": "%98 Pamuk, %2 Elastan",
+    "isNewSeason": false
+  },
+  {
+    "id": 8,
+    "name": "Deri Ceket",
+    "category": "Erkek",
+    "price": 3500,
+    "oldPrice": null,
+    "discount": null,
+    "shortDescription": "Zamansız ve asi bir stil.",
+    "description": "Gerçek deri görünümlü yüksek kaliteli suni deri. Metal fermuar detayları ile modern bir hava katar.",
+    "images": [
+      "https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?q=80&w=200&auto=format&fit=crop"
+    ],
+    "colors": [
+      { "name": "Siyah", "hex": "#000000" }
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "rating": 4.7,
+    "reviewCount": 90,
+    "features": ["Rüzgar Geçirmez", "Su İtici"],
+    "fabric": "%100 Poliüretan",
+    "isNewSeason": true
+  },
+  {
+    "id": 9,
+    "name": "Çocuk Baskılı T-Shirt",
+    "category": "Çocuk",
+    "price": 250,
+    "oldPrice": null,
+    "discount": null,
+    "shortDescription": "Renkli ve eğlenceli baskılar.",
+    "description": "Çocukların hassas cildine uygun %100 pamuklu kumaş. Canlı renkler ve sevimli desenler.",
+    "images": [
+      "https://images.unsplash.com/photo-1519238263496-63439708bc12?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1519238263496-63439708bc12?q=80&w=200&auto=format&fit=crop"
+    ],
+    "colors": [
+      { "name": "Sarı", "hex": "#ffd700" },
+      { "name": "Beyaz", "hex": "#ffffff" }
+    ],
+    "sizes": ["4-5Y", "6-7Y", "8-9Y"],
+    "rating": 4.8,
+    "reviewCount": 45,
+    "features": ["Yumuşak Doku", "Nefes Alan Kumaş"],
+    "fabric": "%100 Pamuk",
+    "isNewSeason": true
+  },
+  {
+    "id": 10,
+    "name": "Kız Çocuk Çiçekli Elbise",
+    "category": "Çocuk",
+    "price": 450,
+    "oldPrice": 600,
+    "discount": "25%",
+    "shortDescription": "Yaz günleri için cıvıl cıvıl.",
+    "description": "Hafif ve terletmeyen kumaş yapısı. Özel günlerde veya günlük kullanımda şıklık sağlar.",
+    "images": [
+      "https://images.unsplash.com/photo-1621452773781-0f992fd0f5d0?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1621452773781-0f992fd0f5d0?q=80&w=200&auto=format&fit=crop"
+    ],
+    "colors": [
+      { "name": "Pembe", "hex": "#ffc0cb" },
+      { "name": "Mavi", "hex": "#add8e6" }
+    ],
+    "sizes": ["3-4Y", "5-6Y", "7-8Y"],
+    "rating": 4.9,
+    "reviewCount": 60,
+    "features": ["Kolay Giyim", "Makinede Yıkanabilir"],
+    "fabric": "%100 Viskon",
+    "isNewSeason": false
+  },
+  {
+    "id": 11,
+    "name": "Çocuk Kot Pantolon",
+    "category": "Çocuk",
+    "price": 399,
+    "oldPrice": null,
+    "discount": null,
+    "shortDescription": "Dayanıklı ve rahat kesim.",
+    "description": "Hareket özgürlüğü sağlayan esnek denim kumaş. Bel ayarı lastiği ile büyüme dönemine uyum sağlar.",
+    "images": [
+      "https://images.unsplash.com/photo-1519457431-44ccd64a579b?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1519457431-44ccd64a579b?q=80&w=200&auto=format&fit=crop"
+    ],
+    "colors": [
+      { "name": "Mavi", "hex": "#1e3f5a" }
+    ],
+    "sizes": ["4Y", "5Y", "6Y", "7Y"],
+    "rating": 4.5,
+    "reviewCount": 35,
+    "features": ["Ayarlanabilir Bel", "Dayanıklı"],
+    "fabric": "%98 Pamuk, %2 Elastan",
+    "isNewSeason": false
+  },
+  {
+    "id": 12,
+    "name": "Erkek Çocuk Sweatshirt",
+    "category": "Çocuk",
+    "price": 350,
+    "oldPrice": 450,
+    "discount": "22%",
+    "shortDescription": "Spor ve günlük kullanım için.",
+    "description": "İçi şardonlu yumuşak kumaş. Kapüşonlu ve kanguru cepli tasarım.",
+    "images": [
+      "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?q=80&w=200&auto=format&fit=crop"
+    ],
+    "colors": [
+      { "name": "Gri", "hex": "#808080" },
+      { "name": "Kırmızı", "hex": "#ff0000" }
+    ],
+    "sizes": ["6Y", "8Y", "10Y", "12Y"],
+    "rating": 4.7,
+    "reviewCount": 40,
+    "features": ["Sıcak Tutar", "Rahat Kesim"],
+    "fabric": "%70 Pamuk, %30 Polyester",
+    "isNewSeason": false
+  }
+]

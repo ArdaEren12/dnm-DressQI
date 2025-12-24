@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STYLE - Modern Giyim Koleksiyonları</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/chat.css">
+  </head>
+  <body>
+    <!-- Header Placeholder -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <!-- Logo -->
+          <a
+            href="index.html"
+            class="logo"
+            style="text-decoration: none; color: black"
+            >STYLE</a
+          >
+
+          <!-- Navigation -->
+          <nav class="nav">
+            <a href="kadin.html" class="nav-link">Kadın</a>
+            <a href="erkek.html" class="nav-link">Erkek</a>
+            <a href="cocuk.html" class="nav-link">Çocuk</a>
+            <a href="yeni-sezon.html" class="nav-link">Yeni Sezon</a>
+            <a href="indirim.html" class="nav-link">İndirim</a>
+          </nav>
+
+          <!-- Icons -->
+          <div class="header-icons">
+            <button class="icon-btn" aria-label="Arama">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle
+                  cx="9"
+                  cy="9"
+                  r="7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M14 14L18 18"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+            <a
+              href="profile.html"
+              class="icon-btn"
+              aria-label="Profil"
+              style="color: black"
+            >
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle
+                  cx="10"
+                  cy="7"
+                  r="4"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M3 18C3 14.6863 5.68629 12 9 12H11C14.3137 12 17 14.6863 17 18"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+            </a>
+            <a
+              href="favorites.html"
+              class="icon-btn"
+              aria-label="Favoriler"
+              style="color: black"
+            >
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M10 17.5L2.5 10C0.833333 8.33333 0.833333 5.66667 2.5 4C4.16667 2.33333 6.83333 2.33333 8.5 4L10 5.5L11.5 4C13.1667 2.33333 15.8333 2.33333 17.5 4C19.1667 5.66667 19.1667 8.33333 17.5 10L10 17.5Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+            </a>
+            <a
+              href="cart.html"
+              class="icon-btn"
+              aria-label="Sepet"
+              style="color: black"
+            >
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M3 3H5L7 13H17L19 5H7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle cx="8" cy="17" r="1.5" fill="currentColor" />
+                <circle cx="16" cy="17" r="1.5" fill="currentColor" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Slider Placeholder -->
+    <!-- Hero Section -->
+    <section class="hero">
+      <!-- Slider Backgrounds -->
+      <div class="hero-slides">
+        <!-- Slide 1 (Mevcut Görsel) -->
+        <div
+          class="slide active"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.3)
+              ),
+              url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1920&auto=format&fit=crop');
+          "
+        ></div>
+        <!-- Slide 2 -->
+        <div
+          class="slide"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.3)
+              ),
+              url('https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1920&auto=format&fit=crop');
+          "
+        ></div>
+        <!-- Slide 3 -->
+        <div
+          class="slide"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.3)
+              ),
+              url('https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=1920&auto=format&fit=crop');
+          "
+        ></div>
+      </div>
+
+      <!-- Content Overlay (Sabit) -->
+      <div class="hero-content">
+        <h1 class="hero-title">YENİ SEZON</h1>
+        <p class="hero-subtitle">2025 İlkbahar Koleksiyonu</p>
+        <button class="hero-btn">KEŞFET</button>
+      </div>
+    </section>
+
+    <!-- Slider Script -->
+    <script>
+        const slides = document.querySelectorAll(".hero-slides .slide");
+        if (slides.length > 0) {
+          let currentSlide = 0;
+          const slideInterval = 5000; // 5 saniyede bir değişim
+
+          setInterval(() => {
+            // Mevcut slaytın active sınıfını kaldır
+            slides[currentSlide].classList.remove("active");
+
+            // Bir sonraki slayta geç (döngüsel)
+            currentSlide = (currentSlide + 1) % slides.length;
+
+            // Yeni slayta active sınıfını ekle
+            slides[currentSlide].classList.add("active");
+          }, slideInterval);
+        }
+    </script>
+
+    <!-- Categories Section -->
+    <section class="categories">
+      <div class="container">
+        <h2 class="section-title">KOLEKSİYONLAR</h2>
+        <div class="categories-grid">
+          <div class="category-card" onclick="window.location.href='kadin.html'">
+            <div class="category-image category-women"></div>
+            <h3 class="category-name">KADIN</h3>
+          </div>
+          <div class="category-card" onclick="window.location.href='erkek.html'">
+            <div class="category-image category-men"></div>
+            <h3 class="category-name">ERKEK</h3>
+          </div>
+          <div class="category-card" onclick="window.location.href='yeni-sezon.html'">
+            <div class="category-image category-new"></div>
+            <h3 class="category-name">YENİ SEZON</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial Banner -->
+    <section class="editorial-section">
+        <div class="editorial-image" style="background-image: url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1920&auto=format&fit=crop');"></div>
+        <div class="editorial-content">
+            <h2 class="editorial-title">SONBAHAR HİKAYELERİ</h2>
+            <p style="font-size: 18px; margin-bottom: 24px;">Doğadan ilham alan tonlar ve yumuşak dokular.</p>
+            <a href="yeni-sezon.html" class="editorial-link">KEŞFET</a>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured">
+      <div class="container">
+        <div class="featured-header">
+          <h2 class="section-title">ÖNE ÇIKANLAR</h2>
+          <div class="featured-actions">
+            <a href="#" class="filter-btn">HEPSİ</a>
+            <a href="#" class="filter-btn">YENİ</a>
+            <a href="#" class="filter-btn">ÇOK SATANLAR</a>
+          </div>
+        </div>
+
+        <div class="products-grid" id="featured-products-list">
+          <!-- JS Loaded items -->
+        </div>
+        
+        <div class="load-more-container">
+            <button class="load-more-btn" onclick="window.location.href='yeni-sezon.html'">TÜMÜNÜ GÖR</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dynamic Featured Products Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+             const featuredList = document.getElementById('featured-products-list');
+             
+             try {
+                const response = await fetch('products.json');
+                const products = await response.json();
+                
+                // Select first 8 products as featured
+                const displayProducts = products.slice(0, 8);
+                
+                featuredList.innerHTML = displayProducts.map(product => `
+                   <div class="product-card" onclick="window.location.href='urun-detay.html?id=${product.id}'">
+                        <div class="product-image-wrapper">
+                            <div class="product-image" style="background-image: url('${product.images[0]}')"></div>
+                            <button class="wishlist-btn" onclick="event.stopPropagation()">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 15.75L2.25 9C0.75 7.5 0.75 5.25 2.25 3.75C3.75 2.25 6 2.25 7.5 3.75L9 5.25L10.5 3.75C12 2.25 14.25 2.25 15.75 3.75C17.25 5.25 17.25 7.5 15.75 9L9 15.75Z" stroke="currentColor" stroke-width="1.5"/></svg>
+                            </button>
+                            ${product.discount ? `<span class="discount-badge">${product.discount}</span>` : (product.isNewSeason ? '<span class="discount-badge" style="background-color: #000;">YENİ</span>' : '')}
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category">${product.category}</p>
+                            <h3 class="product-name">${product.name}</h3>
+                            <div class="product-pricing">
+                                <span class="current-price">${product.price} TL</span>
+                                ${product.oldPrice ? `<span class="old-price">${product.oldPrice} TL</span>` : ''}
+                            </div>
+                        </div>
+                   </div>
+                `).join('');
+
+             } catch(e) {
+                 console.error("Error loading featured products", e);
+             }
+        });
+    </script>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <h3 class="newsletter-title">BİZİ TAKİP EDİN</h3>
+            <p class="newsletter-desc">En yeni koleksiyonlarımızdan, özel fırsatlarımızdan ve etkinliklerimizden haberdar olmak için bültenimize abone olun.</p>
+            <div class="newsletter-input-group">
+                <input type="email" class="newsletter-clean-input" placeholder="E-posta adresiniz">
+                <button class="newsletter-clean-btn">ABONE OL</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Brand Column -->
+          <div class="footer-column">
+            <h3 class="footer-logo">STYLE</h3>
+            <p class="footer-description">
+              Modern ve şık giyim koleksiyonları ile tarzınızı yansıtın.
+              Kaliteli kumaşlar ve özgün tasarımlar.
+            </p>
+          </div>
+
+          <!-- Corporate Column -->
+          <div class="footer-column">
+            <h4 class="footer-heading">Kurumsal</h4>
+            <ul class="footer-links">
+              <li><a href="#">Hakkımızda</a></li>
+              <li><a href="#">Mağazalarımız</a></li>
+              <li><a href="#">Kariyer</a></li>
+              <li><a href="#">İletişim</a></li>
+            </ul>
+          </div>
+
+          <!-- Help Column -->
+          <div class="footer-column">
+            <h4 class="footer-heading">Yardım</h4>
+            <ul class="footer-links">
+              <li><a href="#">Sipariş Takibi</a></li>
+              <li><a href="#">İade ve Değişim</a></li>
+              <li><a href="#">Kargo Bilgileri</a></li>
+              <li><a href="#">Sıkça Sorulan Sorular</a></li>
+            </ul>
+          </div>
+
+          <!-- Newsletter Column -->
+          <div class="footer-column">
+            <h4 class="footer-heading">Bülten</h4>
+            <p class="footer-newsletter-text">
+              Yeni koleksiyonlar ve kampanyalardan haberdar olun.
+            </p>
+            <form class="newsletter-form">
+              <input
+                type="email"
+                placeholder="E-posta adresiniz"
+                class="newsletter-input"
+              />
+              <button type="submit" class="newsletter-btn">Abone Ol</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p class="copyright">© 2025 STYLE. Tüm hakları saklıdır.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M10 0C4.477 0 0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.879V12.89h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.989C16.343 19.128 20 14.991 20 10c0-5.523-4.477-10-10-10z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M10 0C7.284 0 6.944.012 5.877.06 4.813.11 4.086.278 3.45.525a4.902 4.902 0 00-1.772 1.153A4.902 4.902 0 00.525 3.45C.278 4.086.11 4.813.06 5.877.012 6.944 0 7.284 0 10s.012 3.056.06 4.123c.05 1.064.218 1.791.465 2.427a4.902 4.902 0 001.153 1.772 4.902 4.902 0 001.772 1.153c.636.247 1.363.415 2.427.465C6.944 19.988 7.284 20 10 20s3.056-.012 4.123-.06c1.064-.05 1.791-.218 2.427-.465a4.902 4.902 0 001.772-1.153 4.902 4.902 0 001.153-1.772c.247-.636.415-1.363.465-2.427.048-1.067.06-1.407.06-4.123s-.012-3.056-.06-4.123c-.05-1.064-.218-1.791-.465-2.427a4.902 4.902 0 00-1.153-1.772A4.902 4.902 0 0016.55.525C15.914.278 15.187.11 14.123.06 13.056.012 12.716 0 10 0zm0 1.802c2.67 0 2.986.01 4.04.058.975.045 1.504.207 1.857.344.467.181.8.398 1.15.748.35.35.567.683.748 1.15.137.353.299.882.344 1.857.048 1.054.058 1.37.058 4.04s-.01 2.986-.058 4.04c-.045.975-.207 1.504-.344 1.857-.181.467-.398.8-.748 1.15-.35.35-.683.567-1.15.748-.353.137.882-.299 1.857-.344 1.054-.048 1.37-.058-4.04.058s-2.986-.01-4.04-.058c-.975-.045-1.504-.207-1.857-.344a3.097 3.097 0 01-1.15-.748 3.097 3.097 0 01-.748-1.15c-.137-.353-.299-.882-.344-1.857-.048-1.054-.058-1.37-.058-4.04s.01-2.986.058-4.04c.045-.975.207-1.504.344-1.857.181-.467.398-.8.748-1.15.35-.35.683-.567 1.15-.748.353-.137.882-.299 1.857-.344 1.054-.048 1.37-.058 4.04-.058z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"
+                />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M19.615 5.481c-.23-.863-.907-1.54-1.77-1.77C16.283 3.333 10 3.333 10 3.333s-6.283 0-7.845.378c-.863.23-1.54.907-1.77 1.77C0 7.043 0 10.333 0 10.333s0 3.29.385 4.852c.23.863.907 1.54 1.77 1.77 1.562.378 7.845.378 7.845.378s6.283 0 7.845-.378c.863-.23 1.54-.907 1.77-1.77.385-1.562.385-4.852.385-4.852s0-3.29-.385-4.852zM8 13.333V7.333l5.231 3z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Chat Widget HTML -->
+    <div class="chat-widget-fab" id="chat-fab">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+    </div>
+
+    <div class="chat-window" id="chat-window">
+        <div class="chat-header">
+            <div class="chat-title">
+                <span class="chat-status-dot"></span>
+                Destek Asistanı
+            </div>
+            <button class="chat-close-btn" id="chat-close">&times;</button>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="chat-message message-bot">
+                Merhaba! 👋<br>Size nasıl yardımcı olabilirim?
+                <span class="message-time">Şimdi</span>
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" class="chat-input" id="chat-input" placeholder="Mesajınızı yazın...">
+            <button class="chat-send-btn" id="chat-send">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Chat Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const fab = document.getElementById('chat-fab');
+            const window = document.getElementById('chat-window');
+            const closeBtn = document.getElementById('chat-close');
+            const input = document.getElementById('chat-input');
+            const sendBtn = document.getElementById('chat-send');
+            const chatBody = document.getElementById('chat-body');
+
+            const toggleChat = () => {
+                window.classList.toggle('active');
+            };
+
+            fab.addEventListener('click', toggleChat);
+            closeBtn.addEventListener('click', toggleChat);
+
+            const addMessage = (text, type) => {
+                const msgDiv = document.createElement('div');
+                msgDiv.className = `chat-message message-${type}`;
+                msgDiv.innerHTML = `
+                    ${text}
+                    <span class="message-time">${new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>
+                `;
+                chatBody.appendChild(msgDiv);
+                chatBody.scrollTop = chatBody.scrollHeight;
+            };
+
+            const handleSend = () => {
+                const text = input.value.trim();
+                if(!text) return;
+
+                // User Message
+                addMessage(text, 'user');
+                input.value = '';
+
+                // Mock Bot Response
+                setTimeout(() => {
+                    const responses = [
+                        "Bu konuda size yardımcı olabilirim.",
+                        "Harika bir seçim! Stoklarımızda mevcut.",
+                        "Başka bir sorunuz var mı?",
+                        "Müşteri temsilcimize yönlendiriyorum..."
+                    ];
+                    const randomResponse = responses[Math.floor(Math.random() * responses.length)];
+                    addMessage(randomResponse, 'bot');
+                }, 1000);
+            };
+
+            sendBtn.addEventListener('click', handleSend);
+            input.addEventListener('keypress', (e) => {
+                if(e.key === 'Enter') handleSend();
+            });
+        });
+    </script>
+  </body>
+</html>

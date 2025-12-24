@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İndirim - STYLE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <!-- Logo -->
+          <a
+            href="index.html"
+            class="logo"
+            style="text-decoration: none; color: black"
+            >STYLE</a
+          >
+
+          <!-- Navigation -->
+          <nav class="nav">
+            <a href="kadin.html" class="nav-link">Kadın</a>
+            <a href="erkek.html" class="nav-link">Erkek</a>
+            <a href="cocuk.html" class="nav-link">Çocuk</a>
+            <a href="yeni-sezon.html" class="nav-link">Yeni Sezon</a>
+            <a href="indirim.html" class="nav-link">İndirim</a>
+          </nav>
+
+          <!-- Icons -->
+          <div class="header-icons">
+            <button class="icon-btn" aria-label="Arama">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle
+                  cx="9"
+                  cy="9"
+                  r="7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M14 14L18 18"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+            <a
+              href="profile.html"
+              class="icon-btn"
+              aria-label="Profil"
+              style="color: black"
+            >
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle
+                  cx="10"
+                  cy="7"
+                  r="4"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M3 18C3 14.6863 5.68629 12 9 12H11C14.3137 12 17 14.6863 17 18"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+            </a>
+            <a
+              href="favorites.html"
+              class="icon-btn"
+              aria-label="Favoriler"
+              style="color: black"
+            >
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M10 17.5L2.5 10C0.833333 8.33333 0.833333 5.66667 2.5 4C4.16667 2.33333 6.83333 2.33333 8.5 4L10 5.5L11.5 4C13.1667 2.33333 15.8333 2.33333 17.5 4C19.1667 5.66667 19.1667 8.33333 17.5 10L10 17.5Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+            </a>
+            <a
+              href="cart.html"
+              class="icon-btn"
+              aria-label="Sepet"
+              style="color: black"
+            >
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                  d="M3 3H5L7 13H17L19 5H7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle cx="8" cy="17" r="1.5" fill="currentColor" />
+                <circle cx="16" cy="17" r="1.5" fill="currentColor" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+     <!-- Category Hero -->
+     <div class="category-hero" style="background-image: url('https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=1920&auto=format&fit=crop');">
+        <h1 class="category-hero-title">İNDİRİM</h1>
+    </div>
+
+    <main class="container" style="margin-bottom: 80px;">
+        <!-- Filter Bar Only -->
+        <div class="filter-bar">
+            <div class="filter-left">
+                <div class="filter-item">FİLTRELE +</div>
+                <div class="filter-item">SIRALA v</div>
+            </div>
+            <div class="filter-right">
+                <div class="filter-item"><span id="product-count">0</span> ÜRÜN</div>
+            </div>
+        </div>
+        
+         <div class="products-grid" id="product-list">
+             <!-- Products will be injected here via JS -->
+         </div>
+
+         <div class="load-more-container">
+            <button class="load-more-btn">DAHA FAZLA GÖSTER</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Brand Column -->
+          <div class="footer-column">
+            <h3 class="footer-logo">STYLE</h3>
+            <p class="footer-description">
+              Modern ve şık giyim koleksiyonları ile tarzınızı yansıtın.
+              Kaliteli kumaşlar ve özgün tasarımlar.
+            </p>
+          </div>
+
+          <!-- Corporate Column -->
+          <div class="footer-column">
+            <h4 class="footer-heading">Kurumsal</h4>
+            <ul class="footer-links">
+              <li><a href="#">Hakkımızda</a></li>
+              <li><a href="#">Mağazalarımız</a></li>
+              <li><a href="#">Kariyer</a></li>
+              <li><a href="#">İletişim</a></li>
+            </ul>
+          </div>
+
+          <!-- Help Column -->
+          <div class="footer-column">
+            <h4 class="footer-heading">Yardım</h4>
+            <ul class="footer-links">
+              <li><a href="#">Sipariş Takibi</a></li>
+              <li><a href="#">İade ve Değişim</a></li>
+              <li><a href="#">Kargo Bilgileri</a></li>
+              <li><a href="#">Sıkça Sorulan Sorular</a></li>
+            </ul>
+          </div>
+
+          <!-- Newsletter Column -->
+          <div class="footer-column">
+            <h4 class="footer-heading">Bülten</h4>
+            <p class="footer-newsletter-text">
+              Yeni koleksiyonlar ve kampanyalardan haberdar olun.
+            </p>
+            <form class="newsletter-form">
+              <input
+                type="email"
+                placeholder="E-posta adresiniz"
+                class="newsletter-input"
+              />
+              <button type="submit" class="newsletter-btn">Abone Ol</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p class="copyright">© 2025 STYLE. Tüm hakları saklıdır.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M10 0C4.477 0 0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.879V12.89h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.989C16.343 19.128 20 14.991 20 10c0-5.523-4.477-10-10-10z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M10 0C7.284 0 6.944.012 5.877.06 4.813.11 4.086.278 3.45.525a4.902 4.902 0 00-1.772 1.153A4.902 4.902 0 00.525 3.45C.278 4.086.11 4.813.06 5.877.012 6.944 0 7.284 0 10s.012 3.056.06 4.123c.05 1.064.218 1.791.465 2.427a4.902 4.902 0 001.153 1.772 4.902 4.902 0 001.772 1.153c.636.247 1.363.415 2.427.465C6.944 19.988 7.284 20 10 20s3.056-.012 4.123-.06c1.064-.05 1.791-.218 2.427-.465a4.902 4.902 0 001.772-1.153 4.902 4.902 0 001.153-1.772c.247-.636.415-1.363.465-2.427.048-1.067.06-1.407.06-4.123s-.012-3.056-.06-4.123c-.05-1.064-.218-1.791-.465-2.427a4.902 4.902 0 00-1.153-1.772A4.902 4.902 0 0016.55.525C15.914.278 15.187.11 14.123.06 13.056.012 12.716 0 10 0zm0 1.802c2.67 0 2.986.01 4.04.058.975.045 1.504.207 1.857.344.467.181.8.398 1.15.748.35.35.567.683.748 1.15.137.353.299.882.344 1.857.048 1.054.058 1.37.058 4.04s-.01 2.986-.058 4.04c-.045.975-.207 1.504-.344 1.857-.181.467-.398.8-.748 1.15-.35.35-.683.567-1.15.748-.353.137.882-.299 1.857-.344 1.054-.048 1.37-.058-4.04.058s-2.986-.01-4.04-.058c-.975-.045-1.504-.207-1.857-.344a3.097 3.097 0 01-1.15-.748 3.097 3.097 0 01-.748-1.15c-.137-.353-.299-.882-.344-1.857-.048-1.054-.058-1.37-.058-4.04s.01-2.986.058-4.04c.045-.975.207-1.504.344-1.857.181-.467.398-.8.748-1.15.35-.35.683-.567 1.15-.748.353-.137.882-.299 1.857-.344 1.054-.048 1.37-.058 4.04-.058z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+             const productList = document.getElementById('product-list');
+             const productCountElem = document.getElementById('product-count');
+             
+             try {
+                const response = await fetch('products.json');
+                const products = await response.json();
+                
+                // Filter for products with a discount
+                const discountedProducts = products.filter(p => p.discount != null);
+                const displayProducts = discountedProducts;
+
+                if(productCountElem) {
+                    productCountElem.textContent = displayProducts.length;
+                }
+                
+                if (displayProducts.length === 0) {
+                     productList.innerHTML = '<p>Bu kategoride henüz ürün bulunmamaktadır.</p>';
+                     return;
+                }
+
+                productList.innerHTML = displayProducts.map(product => `
+                   <div class="product-card" onclick="window.location.href='urun-detay.html?id=${product.id}'">
+                        <div class="product-image-wrapper">
+                            <div class="product-image" style="background-image: url('${product.images[0]}')"></div>
+                            <button class="wishlist-btn" onclick="event.stopPropagation()">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 15.75L2.25 9C0.75 7.5 0.75 5.25 2.25 3.75C3.75 2.25 6 2.25 7.5 3.75L9 5.25L10.5 3.75C12 2.25 14.25 2.25 15.75 3.75C17.25 5.25 17.25 7.5 15.75 9L9 15.75Z" stroke="currentColor" stroke-width="1.5"/></svg>
+                            </button>
+                            ${product.discount ? `<span class="discount-badge">${product.discount}</span>` : ''}
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category">${product.category}</p>
+                            <h3 class="product-name">${product.name}</h3>
+                            <div class="product-pricing">
+                                <span class="current-price">${product.price} TL</span>
+                                ${product.oldPrice ? `<span class="old-price">${product.oldPrice} TL</span>` : ''}
+                            </div>
+                        </div>
+                   </div>
+                `).join('');
+
+             } catch(e) {
+                 console.error("Error loading discounted products", e);
+                  productList.innerHTML = '<p>Ürünler yüklenirken bir hata oluştu.</p>';
+             }
+        });
+    </script>
+</body>
+</html>
